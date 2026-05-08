@@ -32,4 +32,21 @@ The following programming concepts will be used:
 - Conditional statements (if-else logic)  
 - Exception handling  
 - Input and output handling  
-- Basic string processing  
+- Basic string processing
+
+- ---
+
+## Step 2 – Implementation Progress (08.05)
+
+### Updated System Description
+The system has been partially implemented as an AI-assisted study assistant. The agent processes user input and determines whether to perform a calculation or retrieve information.
+
+### Programming Concepts Used
+- Classes and objects
+- Functions
+- Conditional statements
+- Exception handling
+- Modular programming
+
+### Tool Integration
+The tools are implemented as separate modules and imported into the agent. The agent selects which tool to use based on user input.
