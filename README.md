@@ -48,5 +48,87 @@ The system has been partially implemented as an AI-assisted study assistant. The
 - Exception handling
 - Modular programming
 
-### Tool Integration
+
+---
+
+## Step 3 – Testing and Deployment Preparation (15.05)
+
+### 1. Testing Process
+Testing was performed during development to ensure that each module works correctly. The system was tested manually using different input scenarios. Each tool was tested separately, followed by testing of the full agent workflow.
+
+---
+
+### 2. Test Scenarios
+
+#### Valid calculation
+Input:
+```text
+calculate 2+2
+```
+
+Expected Output:
+```text
+Result: 4
+```
+
+---
+
+#### Invalid calculation
+Input:
+```text
+calculate abc
+```
+
+Expected Output:
+```text
+Error: Invalid mathematical expression
+```
+
+---
+
+#### Information query
+Input:
+```text
+What is Python?
+```
+
+Expected Output:
+```text
+Python is a high-level programming language.
+```
+
+---
+
+#### Empty input
+Input:
+```text
+
+```
+
+Expected Output:
+```text
+Please enter a valid question.
+```
+
+---
+
+### 3. Deployment Preparation
+The system is prepared as a local command-line application.
+
+To run the system:
+
+```bash
+python main.py
+```
+
+The project dependencies are listed in requirements.txt.
+
+---
+
+### 4. Data Conversion / Porting
+The system receives user input as plain text. The agent processes the text and determines whether the input should be passed to the calculator tool or the search tool.
+
+For calculations, the text is converted into a mathematical expression before evaluation.
+
+The output from each tool is returned as a formatted string to the user.### Tool Integration
 The tools are implemented as separate modules and imported into the agent. The agent selects which tool to use based on user input.
