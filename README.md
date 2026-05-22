@@ -132,3 +132,111 @@ For calculations, the text is converted into a mathematical expression before ev
 
 The output from each tool is returned as a formatted string to the user.### Tool Integration
 The tools are implemented as separate modules and imported into the agent. The agent selects which tool to use based on user input.
+
+
+---
+
+# Final Submission (22.05)
+
+## Final System Description
+
+The final system is an AI-assisted study assistant developed in Python for first-year university students studying introductory programming and computer science. The system helps users solve beginner-level academic tasks related to Python programming, algorithms, and mathematical calculations.
+
+Users can ask questions such as:
+- “What is a loop in Python?”
+- “Explain sorting algorithms”
+- “calculate 5 * (3 + 2)”
+
+The system generates structured responses including explanations, definitions, code examples, and calculation results.
+
+---
+
+## Final AI / Agent-Based Approach
+
+The system is implemented as a single intelligent agent using rule-based Natural Language Processing (NLP) techniques.
+
+The agent analyzes user input using:
+- keyword matching
+- intent classification
+- pattern recognition
+
+Inputs related to calculations activate the calculator tool, while programming-related questions activate the search tool.
+
+If the input is unclear, the system uses fallback intent detection to select the most relevant category.
+
+---
+
+## Final Tools and Their Roles
+
+### Calculator Tool
+Processes mathematical expressions and returns formatted calculation results.
+
+### Search Tool
+Provides educational information related to Python programming, algorithms, and beginner-level computer science concepts.
+
+### Agent Logic
+Controls the workflow by analyzing user input and selecting the appropriate tool.
+
+---
+
+## Final Programming Concepts
+
+The project uses:
+- Classes and objects
+- Functions and modular programming
+- Conditional statements
+- Exception handling
+- Input validation
+- File and folder organization
+
+---
+
+## Final Testing Results
+
+### Test Scenarios
+
+| Input | Expected Output |
+|---|---|
+| calculate 2+2 | Result: 4 |
+| calculate abc | Error message |
+| What is Python? | Python explanation |
+| What is an algorithm? | Algorithm definition |
+| Empty input | Validation message |
+
+### Conclusions
+
+Testing confirmed that the system correctly processes user input, selects the appropriate tool, and handles invalid input safely.
+
+---
+
+## Deployment Preparation
+
+The system is prepared as a local command-line application.
+
+### Running the system
+
+```bash
+python main.py
+```
+
+---
+
+## Data Conversion / Porting
+
+The system receives plain text input from the user.
+
+- Mathematical input is converted into evaluable expressions for the calculator tool.
+- Programming-related questions are matched against predefined educational content in the search tool.
+
+The results are formatted and returned as readable text responses.
+
+---
+
+## Deployment Strategy
+
+The system is designed as a lightweight local application suitable for beginner-level educational use.
+
+In the future, the project could be extended into:
+- a web application using Flask or FastAPI,
+- an API-based assistant,
+- or a web-based educational chatbot.
